@@ -28,6 +28,7 @@ findInvoiceById = function(req, res) {
 	
 saveInvoice = function (req, res) {
 	console.log('Saving Invoice ' + req.params.id);
+	console.log(req.body);
 	var emptyItem={"status": "0","comment":"Invoice saved"};
 	res.json(emptyItem);
 }
